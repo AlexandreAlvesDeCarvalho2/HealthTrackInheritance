@@ -41,7 +41,8 @@ public class Corrida extends AtividadeFisica{
 	 * @param distancia
 	 * @param tipoDePista
 	 */
-	public Corrida(int pace, int distancia, String tipoDePista) {
+	public Corrida(String data, double duracao, String intensidade, int caloriasGastas, int pace, int distancia, String tipoDePista) {
+		super(data, duracao, intensidade, caloriasGastas);
 		this.pace = pace;
 		this.distancia = distancia;
 		this.tipoDePista = tipoDePista;

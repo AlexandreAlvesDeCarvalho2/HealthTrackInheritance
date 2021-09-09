@@ -49,7 +49,7 @@ public class AtividadeFisica implements Serializable{
 	 * @param intensidade
 	 * @param caloriasGastas
 	 */
-	public AtividadeFisica(String data, int duracao, String intensidade, int caloriasGastas) {
+	public AtividadeFisica(String data, double duracao, String intensidade, int caloriasGastas) {
 		this.data = data;
 		this.duracao = duracao;
 		this.intensidade = intensidade;
