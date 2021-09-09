@@ -23,7 +23,7 @@ public class AtividadeFisica implements Serializable{
 	/**
 	 * Tempo gasto ao fazer a atividade fisica
 	 */
-	private int duracao;
+	private double duracao;
 	
 	/**
 	 * Intensidade da atividade fisica
@@ -60,7 +60,7 @@ public class AtividadeFisica implements Serializable{
 	 * Verifica a duracao da atividade fisica
 	 * @return duracao
 	 */
-	public int getDuracao() {
+	public double getDuracao() {
 		return duracao;
 	}
 	
@@ -68,7 +68,7 @@ public class AtividadeFisica implements Serializable{
 	 * Altera a duracao da atividade fisica
 	 * @param duracao
 	 */
-	public void setDuracao(int duracao) {
+	public void setDuracao(double duracao) {
 		this.duracao = duracao;
 	}
 	

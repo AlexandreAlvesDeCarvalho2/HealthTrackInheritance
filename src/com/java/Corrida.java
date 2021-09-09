@@ -16,7 +16,7 @@ public class Corrida extends AtividadeFisica{
 	/**
 	 * Ritmo medio do tempo por cada km
 	 */
-	private int pace;
+	private double pace;
 	
 	/**
 	 * Distancia total percorrida
@@ -51,7 +51,7 @@ public class Corrida extends AtividadeFisica{
 	 * Verifica o pace
 	 * @return pace
 	 */
-	public int getPace() {
+	public double getPace() {
 		return super.getDuracao()/ distancia;
 	}
 	
@@ -59,7 +59,7 @@ public class Corrida extends AtividadeFisica{
 	 * Altera o pace
 	 * @param pace
 	 */
-	public void setPace(int pace) {
+	public void setPace(double pace) {
 		this.pace = pace;
 	}
 	
@@ -73,7 +73,7 @@ public class Corrida extends AtividadeFisica{
 	}
 	
 	/**
-	 * Altera a distancia percorridaa
+	 * Altera a distancia percorrida
 	 * @param distancia
 	 */
 	public void setDistancia(int distancia) {
