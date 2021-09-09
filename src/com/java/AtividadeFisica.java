@@ -28,7 +28,7 @@ public class AtividadeFisica implements Serializable{
 	/**
 	 * Quantidade de calorias gastas durante a atividade fisica
 	 */
-	private String caloriasGastas;
+	private int caloriasGastas;
 	
 	/**
 	 * Construtor padrao
@@ -43,7 +43,7 @@ public class AtividadeFisica implements Serializable{
 	 * @param intensidade
 	 * @param caloriasGastas
 	 */
-	public AtividadeFisica(String duracao, String intensidade, String caloriasGastas) {
+	public AtividadeFisica(String duracao, String intensidade, int caloriasGastas) {
 		this.duracao = duracao;
 		this.intensidade = intensidade;
 		this.caloriasGastas = caloriasGastas;
@@ -85,7 +85,7 @@ public class AtividadeFisica implements Serializable{
 	 * Verifica as calorias gastas durante a atividade fisica
 	 * @return caloriasGastas
 	 */
-	public String getCaloriasGastas() {
+	public int getCaloriasGastas() {
 		return caloriasGastas;
 	}
 	
@@ -93,7 +93,7 @@ public class AtividadeFisica implements Serializable{
 	 * Altera as calorias gastas durante a atividade fisica
 	 * @param caloriasGastas
 	 */
-	public void setCaloriasGastas(String caloriasGastas) {
+	public void setCaloriasGastas(int caloriasGastas) {
 		this.caloriasGastas = caloriasGastas;
 	}
 	
