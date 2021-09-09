@@ -52,7 +52,7 @@ public class Corrida extends AtividadeFisica{
 	 * @return pace
 	 */
 	public int getPace() {
-		return pace;
+		return super.getDuracao()/ distancia;
 	}
 	
 	/**
@@ -62,6 +62,7 @@ public class Corrida extends AtividadeFisica{
 	public void setPace(int pace) {
 		this.pace = pace;
 	}
+	
 	
 	/**
 	 * Verifica a distancia percorrida

@@ -14,11 +14,16 @@ public class AtividadeFisica implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	/**
+	 * Data em que foi feita a atividade
+	 */
+	private String data;
 
 	/**
 	 * Tempo gasto ao fazer a atividade fisica
 	 */
-	private String duracao;
+	private int duracao;
 	
 	/**
 	 * Intensidade da atividade fisica
@@ -39,11 +44,13 @@ public class AtividadeFisica implements Serializable{
 	
 	/**
 	 * Constructor Atividade Fisica
+	 * @param data
 	 * @param duracao
 	 * @param intensidade
 	 * @param caloriasGastas
 	 */
-	public AtividadeFisica(String duracao, String intensidade, int caloriasGastas) {
+	public AtividadeFisica(String data, int duracao, String intensidade, int caloriasGastas) {
+		this.data = data;
 		this.duracao = duracao;
 		this.intensidade = intensidade;
 		this.caloriasGastas = caloriasGastas;
@@ -53,7 +60,7 @@ public class AtividadeFisica implements Serializable{
 	 * Verifica a duracao da atividade fisica
 	 * @return duracao
 	 */
-	public String getDuracao() {
+	public int getDuracao() {
 		return duracao;
 	}
 	
@@ -61,7 +68,7 @@ public class AtividadeFisica implements Serializable{
 	 * Altera a duracao da atividade fisica
 	 * @param duracao
 	 */
-	public void setDuracao(String duracao) {
+	public void setDuracao(int duracao) {
 		this.duracao = duracao;
 	}
 	
@@ -95,6 +102,22 @@ public class AtividadeFisica implements Serializable{
 	 */
 	public void setCaloriasGastas(int caloriasGastas) {
 		this.caloriasGastas = caloriasGastas;
+	}
+	
+	/**
+	 * Verifica a data
+	 * @return data
+	 */
+	public String getData() {
+		return data;
+	}
+
+	/**
+	 * Altera a data
+	 * @param data
+	 */
+	public void setData(String data) {
+		this.data = data;
 	}
 	
 	
