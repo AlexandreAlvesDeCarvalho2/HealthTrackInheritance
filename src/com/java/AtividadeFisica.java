@@ -18,17 +18,17 @@ public class AtividadeFisica implements Serializable{
 	/**
 	 * Tempo gasto ao fazer a atividade fisica
 	 */
-	String duracao;
+	private String duracao;
 	
 	/**
 	 * Intensidade da atividade fisica
 	 */
-	String intensidade;
+	private String intensidade;
 	
 	/**
 	 * Quantidade de calorias gastas durante a atividade fisica
 	 */
-	String caloriasGastas;
+	private String caloriasGastas;
 	
 	/**
 	 * Construtor padrao
