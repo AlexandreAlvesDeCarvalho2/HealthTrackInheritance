@@ -33,7 +33,7 @@ public class Teste {
 		/**
 		 * estabelece a intensidade da corrida
 		 */
-		corrida.setIntensidade("Média");
+		corrida.setIntensidade("Media");
 		
 		/**
 		 * estabelece a distancia percorrida
@@ -84,17 +84,37 @@ public class Teste {
 		 * estabelece o tamanho da piscina em metros
 		 */
 		natacao.setTamanhoPiscina(25);
+		
+		
+		/**
+		 * Cria uma variavel alimento que extende a Classe HistAlimento
+		 */
+		Alimento alimento = new Alimento();
+		
+		alimento.setData("10/09/21");
+		
+		alimento.setHorario("19:43");
+		alimento.setKcal(600);
+		alimento.setTipoDeAlimento("Frutas");
+		alimento.setUnidadeDeMedida("50");
+		alimento.setNmAlimento("Maca");
 	
+		
+		
+		
+		
+		
+		
 		/**
 		 * Imprime as informacoes sobre a corrida
 		 */
-		System.out.println("INFORMAÇÕES DA CORRIDA");
+		System.out.println("INFORMACAO S DA CORRIDA");
 		System.out.println("===================================");
 		System.out.println("Data do registro: " + corrida.getData());
 		System.out.println("Tempo de corrida: " +corrida.getDuracao() + " min");
 		System.out.println("Calorias gastas: " +corrida.getCaloriasGastas() + " kcal");
 		System.out.println("Intensidade da corrida: " +corrida.getIntensidade());
-		System.out.println("Distância percorrida: " +corrida.getDistancia() + " km");
+		System.out.println("Distancia percorrida: " +corrida.getDistancia() + " km");
 		System.out.println("Tipo de pista: " +corrida.getTipoDePista());
 		System.out.println("Pace: " +corrida.getPace() +" min/km");
 		
@@ -103,10 +123,10 @@ public class Teste {
 		 * Imprime as informacoes da natacao
 		 */
 		System.out.println("");
-		System.out.println("INFORMAÇÕES DA NATAÇÃO");
+		System.out.println("INFORMACOES DA NATACAO");
 		System.out.println("===================================");
 		System.out.println("Data do registro: " +natacao.getData());
-		System.out.println("Tempo de natação: " +natacao.getDuracao() + " min");
+		System.out.println("Tempo de natacao: " +natacao.getDuracao() + " min");
 		System.out.println("Calorias gastas: " +natacao.getCaloriasGastas() + " kcal");
 		System.out.println("Intensidade do nado: " +natacao.getIntensidade());
 		System.out.println("Estilo do nado: " +natacao.getEstiloNado());
@@ -114,5 +134,25 @@ public class Teste {
 		System.out.println("Quantidade de voltas: " +natacao.getQuantidadeVoltas());
 		System.out.println("Tempo médio por volta: " +natacao.getTempoMedio() + " min");
 		
+		
+		/**
+		 * Imprime as informa��es do Alimento
+		 */
+		
+		System.out.println("");
+		System.out.println("INFORMACOES DO ALIMENTO");
+		System.out.println("===================================");
+		System.out.println("Data do registro: "+alimento.getData());
+		System.out.println("Horario do registro: "+alimento.getHorario());
+		System.out.println("Nome: "+alimento.getNmAlimento());
+		System.out.println("Calorias: " +alimento.getKcal());
+		System.out.println("Tipo de Alimento: "+alimento.getTipoDeAlimento());
+		System.out.println("Peso :" +alimento.getUnidadeDeMedida()+ "gramas");
+
+		
+		
+		
 	}
 }
+
+		
