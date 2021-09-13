@@ -91,12 +91,29 @@ public class Teste {
 		 */
 		Alimento alimento = new Alimento();
 		
+		/**
+		 * estabelece a data do registro do alimento"
+		 */
 		alimento.setData("10/09/21");
-		
+		/**
+		 * estabelece o horario do registro do alimento
+		 */
 		alimento.setHorario("19:43");
+		/*
+		 * estabelece a kcal do alimento
+		 */
 		alimento.setKcal(600);
+		/*
+		 * estabelece o tipo do alimento
+		 */
 		alimento.setTipoDeAlimento("Frutas");
+		/*
+		 * estabelece a unidade de medida do alimento
+		 */
 		alimento.setUnidadeDeMedida("50");
+		/*
+		 * estabelece o nome do alimento
+		 */
 		alimento.setNmAlimento("Maca");
 	
 		
